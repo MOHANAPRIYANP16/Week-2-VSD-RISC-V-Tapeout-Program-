@@ -14,8 +14,8 @@
 - [SoC Design Flow](#soc-design-flow)
 - [VSD BabySoC](#vsd-babysoc)
      - [RVMYTH (RISC-V CPU)](#rvmyth-risc-v-cpu)
-     - [8× Phase Locked Loop (PLL)](#-8×-phase-locked-loop-pll)
-     - [10-bit Digital-to-Analog Converter (DAC)](#-10-bit-digital-to-analog-converter-dac)
+     - [8× Phase Locked Loop (PLL)](#8-phase-locked-loop-pll)
+     - [10-bit Digital-to-Analog Converter (DAC)](#10-bit-digital-to-analog-converter-dac)
 - [Summary](#summary)
 ---
 
