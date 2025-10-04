@@ -90,7 +90,7 @@ First,
   ls
   ```
 
-  ![ls_vsd](ls_vsd.png)
+  ![ls_vsd](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/ls_vsd.png)
 
 ---
 
@@ -115,7 +115,7 @@ First,
 
 ```
 
-![file_structure](file_structure.png)
+![file_structure](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/file_structure.png)
 
 
 - `src/include/` - Contains header files (`*.vh`) with necessary macros or parameter definitions.
@@ -149,7 +149,7 @@ First,
 
   ```
  
- ![dac](avsddac_verilog.png)
+ ![dac](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/avsddac_verilog.png)
 
 
  **Inputs:**
@@ -171,7 +171,7 @@ Run:
 
   ```
 
-  ![pll](avsdpll_verilog.png)
+  ![pll](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/avsdpll_verilog.png)
 
 **Inputs:**
 - VCO_IN → Voltage-Controlled Oscillator input (control signal)
@@ -466,7 +466,7 @@ Run:
 
   ```
 
-![vsdbabysoc](vsdbabysoc_verilog.png)
+![vsdbabysoc](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/vsdbabysoc_verilog.png)
 
 
 **Inputs:**
@@ -514,7 +514,7 @@ cd ~
 pip3 install pyyaml click sandpiper-saas
 ```
 
-![pip](pip_python.png)
+![pip](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/pip_python.png)
 
 To compile the rvmyth.tlv file with sandpiper, run:
 
@@ -525,7 +525,7 @@ python3 -m sandpiper -i ~/Documents/Verilog/Labs/VSDBabySoC/src/module/rvmyth.tl
 
 This command stores the compiled `rvmyth.v` and `rvmyth_gen.v` files inside `~/VSDBabySoC/src/module`.
 
-![rthv.tlv](rvmyth.tlv_sandpiper1.png)
+![rthv.tlv](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/rvmyth.tlv_sandpiper1.png)
 
 ---
 
@@ -549,7 +549,7 @@ gtkwave tb_avsddac.vcd
 
 _Waveform_ :
 
-![wave](adsddac_gtkwave.png)
+![wave](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/adsddac_gtkwave.png)
 
 _Analysis_ :
 
@@ -582,7 +582,7 @@ gtkwave tb_dpll.vcd
 
 _Waveform_:
 
-![pll](pll_gtkwave.png)
+![pll](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/pll_gtkwave.png)
 
 _Analysis_ :
 
@@ -617,7 +617,7 @@ gtkwave tb_rvmyth.vcd
 
 _Waveform_:
 
-![rvmyth](rvmyth_gtkwave_2.png)
+![rvmyth](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/rvmyth_gtkwave_2.png)
 
 _Analysis_ :
 
@@ -657,7 +657,7 @@ gtkwave pre_synth_sim.vcd
 
 waveform :
 
-![pre_synth](pre_synth_gtkwave.png)
+![pre_synth](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/pre_synth_gtkwave.png)
 
 ##  Signal Analysis
 
@@ -861,7 +861,7 @@ write_verilog -noattr ~/vsdbabysoc.synth.v
 ```
 
 
-![write_verilog](write_verilog_workflow.png)
+![write_verilog](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/write_verilog_workflow.png)
 
 Make sure the following files are present in your current current directory (`home`) prior to starting compilation.
 
@@ -901,11 +901,11 @@ gtkwave post_synth_sim.vcd
 ---
 _waveform_
 
-![post_synth](post_synth_gtkwave.png)
+![post_synth](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/post_synth_gtkwave.png)
 
 ## Pre-Synthesis vs Post-Synthesis Simulation
 
-![pre_vs_post](pre_synthvspost_synth.png)
+![pre_vs_post](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/Images/pre_synthvspost_synth.png)
 
 **It is observed that the functionality matches perfectly, and the VSDBabySoC design operates as expected after synthesis.**
 
