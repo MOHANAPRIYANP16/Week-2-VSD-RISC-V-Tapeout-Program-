@@ -37,7 +37,7 @@
   - Cost efficiency
 
 
-   ![soc](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/soc_chip1.jpg)
+   ![soc](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/soc_chip1.jpg)
 
 ---
 
@@ -51,7 +51,7 @@
 - **ESP32**: Low-cost dual-core SoC with Wi-Fi and Bluetooth, popular for IoT and embedded applications.
 
 
-![popular_socs](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/popular_socs.jpg)
+![popular_socs](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/popular_socs.jpg)
 
 ---
 
@@ -293,7 +293,7 @@ Designing a System-on-Chip (SoC) is a **complex multi-stage process** that integ
 
 ---
 
-![soc_design_flow](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/soc_design_flow.png)
+![soc_design_flow](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/soc_design_flow.png)
 
 ---
 
@@ -317,7 +317,7 @@ Its main goal is to enable the simultaneous testing of **three open-source IP co
 3. **Analog Signal Generation via DAC**  
    The **DAC** receives digital values from RVMYTH, converts them into an **analog signal**, and stores the output in a file named `OUT`. This analog output can be connected to external devices like TVs or mobile phones, enabling real-world multimedia interfacing.
 
-![vsd_baby_soc](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/vsd_babysoc.png)
+![vsd_baby_soc](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/vsd_babysoc.png)
 
 ---
 
@@ -325,7 +325,7 @@ Its main goal is to enable the simultaneous testing of **three open-source IP co
 
 **RVMYTH** is a compact RISC-V based microprocessor core that serves as the digital processing unit of VSDBabySoC. It executes instructions and manages data flow within the system. Specifically, it uses its `r17` register to hold and update values that are later sent to the DAC for conversion. This allows continuous digital data processing and streaming.
 
-![rv](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/rvmyth.png)
+![rv](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/rvmyth.png)
 
 ---
 
@@ -333,7 +333,8 @@ Its main goal is to enable the simultaneous testing of **three open-source IP co
 
 The **8× PLL** is responsible for generating a stable and synchronized clock signal. When the SoC is initialized, the PLL locks onto the input frequency and multiplies it by 8, providing a high-frequency clock source for the RVMYTH CPU and DAC. This ensures all components operate in sync, avoiding timing mismatches and improving performance.
 
-![pll](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/PLL.jpeg)
+![pll](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/PLL.jpeg)
+       
 
 ---
 
@@ -341,7 +342,7 @@ The **8× PLL** is responsible for generating a stable and synchronized clock si
 
 The **10-bit DAC** converts digital values processed by RVMYTH into analog signals. These signals are stored in a file named `OUT` and can be fed into external devices such as TVs or mobile phones. This enables VSDBabySoC to interface with real-world analog systems, demonstrating how digital processing can drive multimedia outputs.
 
-![dac](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Images/dac.jpg)
+![dac](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/Images/dac.jpg)
 
 ---
 
