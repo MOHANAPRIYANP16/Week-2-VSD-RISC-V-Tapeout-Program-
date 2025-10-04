@@ -13,7 +13,7 @@ This report highlights the essential concepts for understanding SoC design princ
    - [Part 1](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/tree/main/Part1)  
    - [Part 2](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/tree/main/Part2)  
 3. [Credits](#-credits)  
-4. [Author](#-author)  
+4. [Contributor](#-contributor)  
 
 ---
 
@@ -41,7 +41,7 @@ Thanks also to the **SKY130 PDK community**, contributors of the **VSDBabySoC re
 
 ---
 
-## 👤 Author  
+## 👤 contributor 
 
 **Mohanapriyan p**  
 [LinkedIn](https://www.linkedin.com/in/mohanapriyan-p-b94962325/)  
