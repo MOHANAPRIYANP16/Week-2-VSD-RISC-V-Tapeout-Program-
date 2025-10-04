@@ -1,4 +1,4 @@
-# *Week 2* VSD RISC-V Tapeout Program ![BabySoC](https://img.shields.io/badge/SoC_Learning_%26_Practice-Completed-darkgreen)
+# *Week 2* VSD RISC-V Tapeout Program 
 
 `28/09/2025` → `04/10/2025`
 
@@ -9,7 +9,7 @@ This report highlights the essential concepts for understanding SoC design princ
 ## 📑 Table of Contents
   
 1. [Learning Goals](#-learning-goals)  
-2. [Module-wise Folders](#-module-wise-folders)  
+2. [Part-wise Folders](#-Part-wise-folders)  
    - [Part 1](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/tree/main/Part1)  
    - [Part 2](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/tree/main/Part2)  
 3. [Credits](#-credits)  
@@ -27,9 +27,9 @@ This report highlights the essential concepts for understanding SoC design princ
 
 ---
 
-## 📂 Module-wise Folders  
+## 📂 Part-wise Folders  
 
-- [Part 1](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/README_PART1.md) – Basics and architecture of BabySoC.  
+- [Part 1](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part1/README_PART1.md) – Fundamentals of BabySoC.  
 - [Part 2](https://github.com/MOHANAPRIYANP16/Week-2-VSD-RISC-V-Tapeout-Program-/blob/main/Part2/READMEPart2.md) – Practical functional modelling and simulation flow.  
 
 ---
