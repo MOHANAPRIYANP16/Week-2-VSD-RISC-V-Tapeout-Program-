@@ -10,22 +10,39 @@ It demonstrates **functional modeling, pre- and post-synthesis simulation**, and
 
 ---
 
-## 📑 Table of Contents
-1. [Overview](#overview)  
-2. [Project Structure](#project-structure)  
-3. [Setup & Requirements](#setup--requirements)  
-4. [Module Descriptions](#module-descriptions)  
-   - [vsdbabysoc.v](#vsdbabysocv-top-level-soc-module)  
-   - [rvmyth.v](#rvmythv-risc-v-core)  
-   - [avsdpll.v](#avsdpllv-pll-module)  
-   - [avsddac.v](#avsddacv-dac-module)  
-5. [Testbench](#testbench)  
-6. [RTL & Functional Simulation](#rtl--functional-simulation)  
-7. [Pre-Synthesis Simulation](#pre-synthesis-simulation)  
-8. [Post-Synthesis Simulation](#post-synthesis-simulation)  
-9. [Signal Analysis](#signal-analysis)  
-10. [Troubleshooting](#troubleshooting)  
-11. [Summary](#summary)
+# 📑 Table of Contents  
+
+1. [Cloning the VSDBabySoC Repository](#to-clone-the-repository-)  
+
+2. [File Structure](#file-structure) 
+
+3. [Verilog Source Files](#verilog-source-files-v)  
+   - [avsddac.v – DAC](#avsddacv)  
+   - [avsdpll.v – PLL](#avsdpllv)  
+   - [rvmyth.tlv ](#rvmythtlv)  
+   - [vsdbabysoc.v – Top-Level SoC](#vsdbabysocv)  
+
+4. [Testbench for BabySoC](#testbench-for-babysoc) 
+   - Purpose & Functionality
+   - Waveform Files
+   - Usage with GTKWave
+
+
+5. [RTL Simulation of Modules](#rtl-simulation-of-modules)  
+   - DAC Simulation 
+   - PLL Simulation  
+   - RISC-V Core Simulation  
+
+7. [Pre-Synthesis Simulation of VSDBabySoC](#pre-synthesis-simulation-of-vsdbabysoc)  
+   - Compilation & Execution
+   - Signal Analysis
+
+8. [Post-Synthesis Simulation of VSDBabySoC](#-post-synthesis-simulation-of-vsdbabysoc)  
+   - Synthesis Phase Requirements
+   - Copying Required Header Files
+
+9. [Summary](#-summary)  
+
 
 ---
 
@@ -42,49 +59,9 @@ Key Highlights:
 
 ---
 
-## 📂 Project Structure
+# To clone the repository :
 
-```txt
-VSDBabySoC/
-├── src/
-│   ├── include/
-│   │   ├── sandpiper.vh
-│   │   └── other headers...
-│   ├── module/
-│   │   ├── vsdbabysoc.v      # Top-level module
-│   │   ├── rvmyth.v          # RISC-V core
-│   │   ├── avsdpll.v         # PLL module
-│   │   ├── avsddac.v         # DAC module
-│   │   └── testbench.v       # Testbench
-├── output/
-│   ├── pre_synth_sim/        # Pre-synthesis outputs
-│   ├── post_synth_sim/       # Post-synthesis outputs
-└── compiled_tlv/             # Sandpiper compiled files
-```
----
-
-## ⚙️ Setup & Requirements  
-
-### Install dependencies  
-```bash
-sudo apt install make python3 git iverilog gtkwave docker.io
-pip3 install pyyaml click sandpiper-saas
-```
-
-### Clone repo
-
-```
-   git clone https://github.com/manili/VSDBabySoC.git
-   cd VSDBabySoC
-```  
-
-
-
-
-
-
-
-
+First,
 
 ## Navigate to the `home` directory.
   
@@ -925,3 +902,59 @@ gtkwave post_synth_sim.vcd
 _waveform_
 
 ![post_synth](post_synth_gtkwave.png)
+
+## Pre-Synthesis vs Post-Synthesis Simulation
+
+![pre_vs_post](pre_synthvspost_synth.png)
+
+**It is observed that the functionality matches perfectly, and the VSDBabySoC design operates as expected after synthesis.**
+
+---
+
+
+# 📌 Summary  
+
+This document provides a **step-by-step guide** to setting up, compiling, and simulating the **VSDBabySoC**, a compact open-source **System-on-Chip (SoC)** integrating:  
+
+-  **RISC-V CPU (rvmyth)**  
+-  **DAC (avsddac.v)**  
+-  **PLL (avsdpll.v)**  
+
+---
+
+##  Repository Structure  
+The repository explains where **Verilog modules, headers, and outputs** are stored for easy navigation.  
+
+---
+
+##  Module Overview  
+
+- **DAC (`avsddac.v`)** → Converts CPU digital data into analog output.  
+- **PLL (`avsdpll.v`)** → Generates a stable clock from a reference input.  
+- **RISC-V Core (`rvmyth.tlv / rvmyth.v`)** → Handles instruction execution, arithmetic, memory, and branching.  
+- **Top-Level (`vsdbabysoc.v`)** → Integrates all components into a complete SoC.  
+
+---
+
+##  Testbench & Simulation  
+- **Testbenches** ensure correctness of modules and the SoC.  
+- **Waveforms (`.vcd`)** are generated and can be debugged using **GTKWave**.  
+
+---
+
+##  Toolchain Setup  
+Covers installation and usage of essential tools:  
+- `iverilog` → Simulation  
+- `gtkwave` → Waveform visualization  
+- `sandpiper` → TLV-to-Verilog conversion  
+
+---
+
+##  Verification Flow  
+- ✅ **Pre-synthesis simulation** → Verify RTL design.  
+- ✅ **Post-synthesis simulation** → Ensure correctness after synthesis.  
+
+---
+
+👉 **In short:**  
+This guide explains how to **set up, understand, and verify VSDBabySoC** through structured simulations and waveform analysis.  
