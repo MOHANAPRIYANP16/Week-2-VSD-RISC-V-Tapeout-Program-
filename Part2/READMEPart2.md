@@ -17,25 +17,6 @@ It demonstrates **functional modeling, pre- and post-synthesis simulation**, and
 2. [File Structure](#file-structure) 
 
 3. [Verilog Source Files](#verilog-source-files-v)  
-   - [avsddac.v – DAC](#avsddacv)  # 🚀 VSDBabySoC: Hands-on Functional SoC Modelling
-
-![Verilog](https://img.shields.io/badge/Verilog-RTL-green)
-![Icarus Verilog](https://img.shields.io/badge/Simulator-Icarus%20Verilog-blue)
-![GTKWave](https://img.shields.io/badge/Waveform-GTKWave-orange)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-
-The **VSDBabySoC** is a simplified educational SoC design that integrates a **RISC-V core (`rvmyth`)**, a **PLL (Phase-Locked Loop)**, and a **DAC (Digital-to-Analog Converter)**.  
-It demonstrates **functional modeling, pre- and post-synthesis simulation**, and waveform analysis using **Icarus Verilog** and **GTKWave**.  
-
----
-
-# 📑 Table of Contents  
-
-1. [Cloning the VSDBabySoC Repository](#to-clone-the-repository-)  
-
-2. [File Structure](#file-structure) 
-
-3. [Verilog Source Files](#verilog-source-files-v)  
    - [avsddac.v – DAC](#avsddacv)  
    - [avsdpll.v – PLL](#avsdpllv)  
    - [rvmyth.tlv ](#rvmythtlv)  
