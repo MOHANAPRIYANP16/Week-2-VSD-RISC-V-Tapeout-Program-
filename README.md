@@ -34,7 +34,7 @@ This report highlights the essential concepts for understanding SoC design princ
 
 ---
 
-## 🙏 Credits  
+## Credits  
 
 Special appreciation to **Mr. [Kunal Ghosh](https://in.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836)** and the **VSD team** for mentorship and learning materials.  
 Thanks also to the **SKY130 PDK community**, contributors of the **VSDBabySoC repo**, and developers of open-source EDA tools like **Yosys**, **Icarus Verilog**, and **GTKWave**.  
